@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{%static "nfilili/index.css"%}">
+</head>
+<body>
+<div class="form-body">
+
+  <form action="{%url "form-view"%}" method="POST" class="forms">
+    <h1>Please fill the given <span style="color: crimson;">form</span> </h1>
+    {% csrf_token %}
+     {% for fields in form %}
+     {{fields}}
+     {% endfor %}
+    <input type="submit" id="submit" class="button">
+  </form>
+</div>
+</div>
+</body>
+</html>

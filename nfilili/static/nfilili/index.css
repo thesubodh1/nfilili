@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.offer {
+    background-color: crimson;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.offer h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+@media (min-width: 768px) {
+    .left {
+        max-width: 50%;
+
+    }
+}
+.sub-title {
+    border: 1px solid crimson;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: fit-content;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.title {
+    font-weight: bolder;
+    text-wrap: pretty;
+    font-size: 2rem;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #707070;
+    max-width: 90%;
+}
+
+input {
+    border: 1px solid #3b3b3b;
+    padding: 8px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.button {
+    border: none;
+    background-color: crimson;
+    padding: 8px;
+    border-radius: 20px;
+    width: 130px;
+    height: 40px;
+    color: white;
+}
+
+.cta {
+    display: flex;
+    gap: 10px;
+}
+
+#timer {
+    font-weight: bold;
+    
+}
+
+.navbar {
+    margin: 20px;
+}
+
+.form-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.form-body input {
+    border-width: 1.5px;
+    border-radius: 0px;
+}
+
+.form-body h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+textarea {
+    border: 1.5px solid #3b3b3b;
+    text-align: center;
+
+}
+
+#submit {
+    align-self: center;
+}
