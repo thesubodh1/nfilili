@@ -1,0 +1,38 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.description {
+    background-color: bisque;
+    border: 5px solid black;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    border-radius: 15px;
+}
+
+nav {
+    text-align: center;
+    padding-top: 25px;
+    background-color: #7379ce;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+
+
+.thank-you {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    text-align: center;
+ 
+}
+
+
+
+
