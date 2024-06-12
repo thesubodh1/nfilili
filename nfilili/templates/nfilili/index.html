@@ -19,28 +19,31 @@
 
     <div class="hero">
         <div class="left">
-        <h3 class="sub-title">Prime platform to digitally promote your business.</h3>
-        <h1 class="title">market your business online and boost your digital presence</h1>
-        <p class="description">Welcome to Nfilili where your digital desires meet limitless possibilities! Explore, discover, and indulge in our vibrant marketplace curated just for you. Let your journey begin!</p>
-        <div class="cta">
-            <form action="{% url "index-view" %}" method = "POST">
-            {% csrf_token %}
-            {% for fields in form %}
-        <div class="form-control {% if fields.errors %}errors{% endif %}">
-            {{fields}}
-            {{fields.errors}}
-            <button class="button">Send</button>
+            <h3 class="sub-title">Prime platform to digitally promote your business.</h3>
+            <h1 class="title">market your business online and boost your digital presence</h1>
+            <p class="description">Welcome to Nfilili where your digital desires meet limitless possibilities! Explore, discover, and indulge in our vibrant marketplace curated just for you. Let your journey begin!</p>
+            <div class="cta">
+                <form action="{% url "index-view" %}" method = "POST">
+                {% csrf_token %}
+                {% for fields in form %}
+                <div class="form-control {% if fields.errors %}errors{% endif %}">
+                    {{fields}}
+                    {{fields.errors}}
+                    <button class="button">Send</button>
+                </div>
+                {% endfor %}
+                </form>
+            </div>
         </div>
-            {% endfor %}
-            </form>
-        </div>
-
-        </div>
-
         <div class="right">
-        <img src="{%static "nfilili/images/ill.png"%}" alt="illustration" width="400" height="400">
+            <img src="{%static "nfilili/images/ill.png"%}" alt="illustration" width="400" height="400">
         </div>
-    </div>   
+    </div> 
+    {% if success_message %}
+    <div class="alert" id="success-alert">
+        {{ success_message }}
+    </div>
+    {% endif %}
 </div> 
 </body>
 </html>

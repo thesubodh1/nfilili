@@ -12,7 +12,7 @@ class EmailRegistrationForm(forms.ModelForm):
 class DetailRegistrationForm(forms.ModelForm):
     class Meta:
         model = DetailRegistration
-        exclude = ["email"]
+        exclude = ["email","latitude","longitude"]
         widgets = {
             "full_name" : forms.TextInput(attrs={'placeholder': 'Enter your full name'}),
             "business_name" : forms.TextInput(attrs={'placeholder': 'Enter your business name'}),

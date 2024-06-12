@@ -12,10 +12,12 @@ class DetailRegistration(models.Model):
     description = models.TextField()
     location = models.CharField(max_length=300,null=True)
     email = models.ForeignKey(EmailRegister,on_delete=models.SET_NULL,null=True)
+    latitude = models.CharField(max_length=10,null=True)
+    longitude = models.CharField(max_length=10,null=True)
  
 
     def __str__(self):
-        return f"{self.full_name} {self.business_name} {self.description} {self.location}"
+        return f"{self.full_name} {self.business_name} {self.description} {self.location}  {self.latitude} {self.longitude}"
     
 
 
